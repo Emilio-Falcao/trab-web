@@ -3,8 +3,20 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #32CD32;
+  background-color:black;
   color: white;
- text-align: center;
+ text-align: left;
+
 }
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+     color: white;
+  }
+
+  main {
+    flex: 1 0 auto;
+      color: white;
+  }
 
