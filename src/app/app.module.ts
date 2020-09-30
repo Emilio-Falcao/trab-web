@@ -11,6 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { FooterComponent } from './footer/footer.component';
 
+
 @NgModule({
   declarations: [AppComponent, HomeComponent, MenuComponent, AjudaComponent, FooterComponent],
   imports: [
@@ -19,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
