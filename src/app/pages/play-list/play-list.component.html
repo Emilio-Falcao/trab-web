@@ -1,0 +1,43 @@
+<app-menu></app-menu>
+
+
+
+<div class="container">
+
+
+  <div id="accordion">
+    <div class="card" *ngFor="let lista of listaMusicas" (click)="onSelect(lista)"
+      [class.selected]="lista===listaClicada">
+      <div class="card-header">
+        <div *ngIf="listaClicada" class="details"></div>
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          <img [src]="lista.url" alt="">
+
+
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+
+          <span class="badge">{{lista.nome}}</span>
+          <table>
+            <tr>
+              
+          <td><audio controls [src]="lista.audio" type="audio/ogg"></audio></td>
+            </tr>
+            <tr>
+          <td><audio controls [src]="lista.audio1"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls [src]="lista.audio2"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls [src]="lista.audio3"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls [src]="lista.audio4"></audio></td>
+        </tr>
+          </table>
+        </div>
+      </div>
+    </div>
